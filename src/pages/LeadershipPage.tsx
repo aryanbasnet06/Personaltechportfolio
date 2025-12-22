@@ -322,12 +322,12 @@ export function LeadershipPage() {
           <div className="club-text">
             <span className="tag">Innovation & Impact</span>
             <h2>
-              President
+              Vice President
               <br />
-              Programming & Robotics Club
+              Rato Bangala School Programming & Robotics Club
             </h2>
             <p>
-              As President, I managed the club’s academic and technical
+              As the Vice President, I managed the club’s academic and technical
               activities, organizing regular coding sessions and introductory
               workshops for junior students. I focused on building strong
               fundamentals, encouraging peer learning, and guiding members

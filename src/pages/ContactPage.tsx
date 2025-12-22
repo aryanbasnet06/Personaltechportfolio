@@ -2,8 +2,30 @@ import { Mail } from "lucide-react";
 
 export function ContactPage() {
   return (
-    <section className="contact-root">
+    <section className="contact-root fade-in">
       <style>{`
+        * {
+          box-sizing: border-box;
+        }
+
+        /* ===== PAGE LOAD TRANSITION ===== */
+        .fade-in {
+          opacity: 0;
+          transform: translateY(32px);
+          animation: fadeInUp 1.1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(32px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
         .contact-root {
           padding: 140px 24px 120px;
           font-family: "Georgia", "Times New Roman", serif;
@@ -52,6 +74,7 @@ export function ContactPage() {
           border: 1px solid #c5c5c5;
           font-size: 16px;
           outline: none;
+          font-family: inherit;
         }
 
         .contact-input::placeholder,

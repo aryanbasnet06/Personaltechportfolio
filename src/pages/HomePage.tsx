@@ -182,7 +182,7 @@ export function HomePage() {
             <h2>ABOUT ME</h2>
 
             <p>
-              Hi! I’m Aryan Basnet, graduate of Rato Bangala School. A social
+              Hi! I’m Aryan Basnet, graduate of Rato Bangala School. As a social
               entrepreneur, I'm the founder of a non-profit aiding in providing
               holistic education to disadvantaged students called ‘Vidhata’.
             </p>
