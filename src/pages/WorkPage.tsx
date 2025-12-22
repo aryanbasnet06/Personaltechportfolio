@@ -183,7 +183,7 @@ export function WorkPage() {
           <img src="/images/presentation.jpeg" alt="Nabil Event 1" />
           <img src="/images/session1.jpeg" alt="Nabil Event 2" />
           <img src="/images/session2.jpeg" alt="Nabil Event 3" />
-          <img src="/images/session_best.jpeg" alt="Nabil Event 4" />
+          <img src="/images/nabil4.jpeg" alt="Nabil Event 4" />
         </div>
       </div>
 
