@@ -278,13 +278,11 @@ export function CommunityPage() {
             <p className="initiative-text">
               I started Vidhata in January 2022 to address gaps in holistic,
               non-academic learning for underserved students in Nepal. Growing
-              up, I encountered severely understaffed schools with teachers
-              available only for core academic subjects (usually STEM-oriented),
-              which restricted intellectual growth for students. With limited
-              access to extracurricular education and life skills, their
-              decision-making and critical thinking abilities remained
-              underdeveloped, and they were instead forced into the trap of rote
-              learning. This limited their horizons and aspirations.
+              up, I saw how limited access to skill-based education constrained
+              students’ confidence, exposure, and future opportunities,
+              especially in public school systems. I wanted to create an
+              initiative that complemented formal education by fostering life
+              skills and personal development.
             </p>
 
             <p className="initiative-text">
