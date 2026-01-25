@@ -257,7 +257,7 @@ export function ProjectsPage() {
                 Play the Game
               </a>
               <a
-                href="https://www.youtube.com/watch?v=zHpVenMTf3k"
+                href="https://www.youtube.com/watch?v=Ng4upY_2MVQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"
@@ -303,7 +303,8 @@ export function ProjectsPage() {
           <h2>Game Demonstration</h2>
           <div className="demo-frame">
             <iframe
-              src="https://www.youtube.com/embed/zHpVenMTf3k"
+              src="https://www.youtube.com/embed/Ng4upY_2MVQ
+"
               title="Titan 3023 Gameplay Demonstration"
               allowFullScreen
             />
