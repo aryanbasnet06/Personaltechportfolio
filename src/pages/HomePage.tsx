@@ -200,17 +200,14 @@ export function HomePage() {
               every venture on this foundation of left and right brain
               abilities.
             </p>
-
-            <button className="resume-btn">
-              <a
-                href="https://docs.google.com/document/d/1cQZ2WPyHhvMtswRcPlpzA0tDWr26PqCdDeZoNvEQnes/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
-                Check out my resume
-              </a>
-            </button>
+            <a
+              href="https://docs.google.com/document/d/1cQZ2WPyHhvMtswRcPlpzA0tDWr26PqCdDeZoNvEQnes/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              <button className="resume-btn">Check out my resume</button>
+            </a>
           </div>
         </div>
       </section>
