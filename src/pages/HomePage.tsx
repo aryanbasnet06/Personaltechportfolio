@@ -199,7 +199,7 @@ export function HomePage() {
             </p>
             <p>
               I describe myself as an Artist at heart. I'm a semi-professional
-              artist with 12 years of experience in Fine Art. I hope to build
+              artist with 8 years of experience in Fine Art. I hope to build
               every venture on this foundation of left and right brain
               abilities.
             </p>
