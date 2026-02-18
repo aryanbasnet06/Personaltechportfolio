@@ -271,7 +271,7 @@ export function CommunityPage() {
             <div className="heading-row">
               <img src="/images/vidhata-logo.png" className="logo" />
               <h2 className="initiative-heading">
-                Vidhata, my Non-Profit Organisation
+                Vidhata, my Non-Profit Organization
               </h2>
             </div>
 
