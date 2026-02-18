@@ -276,23 +276,32 @@ export function CommunityPage() {
             </div>
 
             <p className="initiative-text">
-              I started Vidhata in January 2022 to address gaps in holistic,
-              non-academic learning for underserved students in Nepal. Growing
-              up, I saw how limited access to skill-based education constrained
-              students’ confidence, exposure, and future opportunities,
-              especially in public school systems. I wanted to create an
-              initiative that complemented formal education by fostering life
-              skills and personal development.
+              With nothing but my backpack, I began my volunteering journey,
+              working in numerous government schools. Along the way, I
+              encountered severely understaffed schools with teachers available
+              only for core academic subjects (usually STEM-oriented), which
+              restricted intellectual growth for students. With limited access
+              to extracurricular education and life skills, their
+              decision-making and critical thinking abilities remained
+              underdeveloped, and they were instead forced into the trap of rote
+              learning. This limited their horizons and aspirations.
             </p>
 
             <p className="initiative-text">
-              Today, Vidhata operates through a structured, volunteer-driven
-              model focused on skill-building and mentorship. By connecting
-              trained volunteers with schools and communities, we deliver
-              accessible and well-designed learning interventions beyond
-              traditional curricula. Since its inception, Vidhata has impacted
-              thousands of students across Nepal through scalable,
-              community-centered programs.
+              Moved by these challenges, I felt a strong need to act. With a
+              heart set on finding a solution, I started "Vidhata." Through
+              Vidhata, we provide non-academic, holistic learning to
+              underprivileged students across Nepal.
+            </p>
+
+            <p className="initiative-text">
+              Focusing on social, emotional, and ethical development through a
+              comprehensive framework, we help develop a variety of soft skills
+              among our students to enable them to be well-rounded global
+              citizens and expose them to a larger world of opportunities. With
+              us, students find their horizons broadened and become more
+              confident in pursuing bigger ambitions, no longer limited by their
+              lack of knowledge or opportunities.
             </p>
           </div>
 

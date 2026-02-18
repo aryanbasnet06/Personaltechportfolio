@@ -156,7 +156,7 @@ export function HomePage() {
         <div className="hero-img-wrapper">
           <img
             src="images/aryanbasnet_final_image_1.png"
-            alt="Vidhi Miglani speaking"
+            alt="aryan basnet photo"
             className="hero-img"
           />
         </div>
