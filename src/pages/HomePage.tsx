@@ -177,7 +177,7 @@ export function HomePage() {
         <div className="about">
           <img
             src="/images/aryanbasnet_1.png"
-            alt="Vidhi Miglani portrait"
+            alt="aryan basnet photo"
             className="about-img"
           />
 
