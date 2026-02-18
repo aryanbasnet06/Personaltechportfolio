@@ -61,18 +61,21 @@ export function HomePage() {
           opacity: 0.85;
         }
 
-        .hero-img-wrapper {
-          display: flex;
-          justify-content: center;
-          margin-bottom: 40px;
-        }
+.hero-img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 
-        .hero-img {
-          width: 320px;
-          height: auto;
-          // border: 12px solid #7a0c0c;
+.hero-img {
+  width: 380px;              /* Increased size */
+  max-width: 90%;            /* Responsive scaling */
+  height: auto;
+  object-fit: cover;         /* Keeps proportions clean */
+  border-radius: 12px;       /* Smooth modern edges */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Soft premium shadow */
+}
 
-        }
 
         .tagline {
           font-size: 18px;
@@ -152,7 +155,7 @@ export function HomePage() {
       <section className="hero">
         <div className="hero-img-wrapper">
           <img
-            src="images/aryanbasnet_main.jpeg"
+            src="images/aryanbasnet_final_image_1.png"
             alt="Vidhi Miglani speaking"
             className="hero-img"
           />
@@ -173,7 +176,7 @@ export function HomePage() {
       <section className="about-wrapper">
         <div className="about">
           <img
-            src="/images/aryanbasnet_main.jpeg"
+            src="/images/aryanbasnet_1.png"
             alt="Vidhi Miglani portrait"
             className="about-img"
           />
