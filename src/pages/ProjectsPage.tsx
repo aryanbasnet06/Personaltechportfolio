@@ -237,38 +237,42 @@ export function ProjectsPage() {
       <div className="section-white">
         <div className="titan-container hero">
           <div>
-            <span className="hero-tag">Educational Game Project</span>
-            <h1>Titan 3023</h1>
+            <span className="hero-tag">Research Project</span>
+            <h1>
+              Understanding the Impact of Artificial Intelligence (AI) Tools on
+              Teaching and Learning in Government Schools in Nepal
+            </h1>
             <p>
-              Titan 3023 is a narrative-driven educational space game that
-              teaches children facts about the solar system through interactive
-              missions. It blends astronomy with engaging gameplay, allowing
-              players to explore planets, learn key concepts, and apply their
-              knowledge through fun challenges.
+              Understanding the Impact of Artificial Intelligence (AI) Tools on
+              Teaching and Learning in Government Schools in Nepal” is a
+              research study that examines how AI tools influence teaching
+              effectiveness and student learning outcomes in Nepal’s public
+              schools. Using data collected from 412 teachers across 78
+              government schools, the study explores the role of teacher
+              readiness, digital infrastructure, and AI adoption in education.
+              It highlights how AI can support classroom learning when combined
+              with proper teacher training and equitable access to technology,
+              while also identifying key challenges faced by rural and
+              low-resource schools.
             </p>
 
             <div className="hero-cta">
               <a
-                href="https://play.unity.com/en/games/754fe501-9767-4a01-a6da-91f46dceb2e5/titan-3023"
+                href="https://www.ijraset.com/best-journal/understanding-the-impact-of-artificial-intelligence-ai-tools-on-teaching-and-learning-in-government-schools-in-nepal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Play the Game
-              </a>
-              <a
-                href="https://www.youtube.com/watch?v=Ng4upY_2MVQ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-              >
-                Watch Demonstration
+                Read the paper
               </a>
             </div>
           </div>
 
           <div className="hero-image">
-            <img src="/images/game-logo.png" alt="Titan 3023 game visual" />
+            <img
+              src="/images/research_paper.png"
+              alt="Titan 3023 game visual"
+            />
           </div>
         </div>
       </div>
