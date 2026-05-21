@@ -281,40 +281,49 @@ export function ProjectsPage() {
       <div className="section-grey">
         <div className="titan-container">
           <div className="features-title">
-            <h1>Features of the Game</h1>
+            <h1>Features of the paper</h1>
           </div>
 
           <div className="features">
             <div className="feature">
-              <h4>Embedded Scientific Concepts</h4>
-              <p>Learning emerges naturally from gameplay mechanics.</p>
+              <h4>AI & Education Research</h4>
+              <p>
+                Examines how AI tools impact teaching and student learning in
+                Nepal’s government schools.
+              </p>
             </div>
             <div className="feature">
-              <h4>Mission-Oriented Progression</h4>
-              <p>Each level mirrors real-world space exploration challenges.</p>
+              <h4>Teacher Readiness Analysis</h4>
+              <p>
+                Highlights the importance of teacher training and digital
+                readiness for effective AI integration.
+              </p>
             </div>
             <div className="feature">
-              <h4>Accessible & Thoughtful Design</h4>
-              <p>Simple visuals and intuitive controls ensure ease of use.</p>
+              <h4>Infrastructure & Equity Insights</h4>
+              <p>
+                Explores how infrastructure and resource gaps affect AI adoption
+                in urban and rural schools.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       {/* GAME DEMO */}
-      <div className="section-white">
+      {/* <div className="section-white">
         <div className="titan-container demo">
           <h2>Game Demonstration</h2>
           <div className="demo-frame">
             <iframe
-              src="https://www.youtube.com/embed/Ng4upY_2MVQ
+              // src="https://www.youtube.com/embed/Ng4upY_2MVQ
 "
               title="Titan 3023 Gameplay Demonstration"
               allowFullScreen
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* BOOK PROJECT */}
       <div className="section-grey">
