@@ -197,12 +197,12 @@ export function HomePage() {
               every problem with a unique 360-degree view that keeps the user at
               the centre of solution building.
             </p>
-            <p>
+            {/* <p>
               I describe myself as an Artist at heart. I'm a semi-professional
               artist with 8 years of experience in Fine Art. I hope to build
               every venture on this foundation of left and right brain
               abilities.
-            </p>
+            </p> */}
             <a
               href="https://docs.google.com/document/d/1cQZ2WPyHhvMtswRcPlpzA0tDWr26PqCdDeZoNvEQnes/edit?usp=sharing"
               target="_blank"

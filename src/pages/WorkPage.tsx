@@ -187,6 +187,38 @@ export function WorkPage() {
         </div>
       </div>
 
+      <div className="section section-white">
+        <h2 className="title-sub">AI Engineer, Hello World IT Solutions</h2>
+
+        <div className="content-flex">
+          <div className="text-block">
+            <p>As an AI Engineer, I worked on the following:</p>
+
+            <ul>
+              <li>
+                Developed an AI model diagnosing Pneumonia and Tuberculosis
+                using 7,132 chest X-ray images.
+              </li>
+              <li>
+                Built a lightweight architecture with 3.7 million parameters.
+              </li>
+              <li>Achieved 94% overall diagnostic accuracy.</li>
+              <li>
+                Received validation from medical experts for clinical
+                applicability.
+              </li>
+            </ul>
+          </div>
+
+          <div className="single-image-block">
+            <img
+              src="/images/hello-world-it-solutions-logo.png"
+              alt="Hello World IT Solutions"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* ------------------ WORK EXPERIENCE ------------------ */}
       <div className="section section-grey">
         <h1 className="title-main">Work Experience</h1>
@@ -231,41 +263,10 @@ export function WorkPage() {
       </div>
 
       {/* ------------------ AI ENGINEER ------------------ */}
-      <div className="section section-white">
-        <h2 className="title-sub">AI Engineer, Hello World IT Solutions</h2>
-
-        <div className="content-flex">
-          <div className="text-block">
-            <p>As an AI Engineer, I worked on the following:</p>
-
-            <ul>
-              <li>
-                Developed an AI model diagnosing Pneumonia and Tuberculosis
-                using 7,132 chest X-ray images.
-              </li>
-              <li>
-                Built a lightweight architecture with 3.7 million parameters.
-              </li>
-              <li>Achieved 94% overall diagnostic accuracy.</li>
-              <li>
-                Received validation from medical experts for clinical
-                applicability.
-              </li>
-            </ul>
-          </div>
-
-          <div className="single-image-block">
-            <img
-              src="/images/hello-world-it-solutions-logo.png"
-              alt="Hello World IT Solutions"
-            />
-          </div>
-        </div>
-      </div>
 
       {/* ------------------ INTERNSHIP ------------------ */}
-      <div className="section section-grey">
-        <h1 className="title-main">Internship</h1>
+      {/* <div className="section section-grey"> */}
+      {/* <h1 className="title-main">Internship</h1>
 
         <h2 className="title-sub">Product Design Intern, Billion Bricks</h2>
 
@@ -290,11 +291,11 @@ export function WorkPage() {
                 Conducted user research on sustainable housing challenges.
               </li>
               <li>Translated research insights into early design concepts.</li>
-              <li>Created and refined prototypes using Blender and Sketch.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+              <li>Created and refined prototypes using Blender and Sketch.</li> */}
+      {/* </ul> */}
+      {/* </div> */}
+      {/* </div> */}
+      {/* </div> */}
     </div>
   );
 }
