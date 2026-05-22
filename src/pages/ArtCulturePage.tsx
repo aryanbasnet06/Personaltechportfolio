@@ -402,7 +402,7 @@ export function ArtCulturePage() {
       </section>
 
       {/* ===== MY ART SECTION ===== */}
-      <div className="my-art-section">
+      {/* <div className="my-art-section">
         <div className="my-art-header">
           <h2>My Arts</h2>
           <p>
@@ -483,7 +483,7 @@ export function ArtCulturePage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
