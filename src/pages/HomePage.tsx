@@ -12,6 +12,7 @@ export function HomePage() {
           transform: translateY(24px);
           animation: fadeInUp 1.15s ease-out forwards;
         }
+
         @keyframes fadeInUp {
           to {
             opacity: 1;
@@ -25,6 +26,7 @@ export function HomePage() {
         * {
           box-sizing: border-box;
         }
+
         body {
           margin: 0;
           background: #ffffff;
@@ -40,16 +42,18 @@ export function HomePage() {
         }
 
         /* ==============================
-           HERO SECTION (MOVED UP)
+           HERO SECTION
         ============================== */
         .hero {
-          padding: 110px 24px 48px; /* reduced top padding */
+          padding: 110px 24px 48px;
         }
 
-        .name {
+        .name,
+        h1.name {
           font-size: 72px;
           font-weight: 700;
           color: #7a0c0c;
+          margin-top: 0;
           margin-bottom: 16px;
           letter-spacing: 0.5px;
         }
@@ -61,27 +65,29 @@ export function HomePage() {
           opacity: 0.85;
         }
 
-.hero-img-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
+        .hero-img-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+        }
 
-.hero-img {
-  width: 380px;              /* Increased size */
-  max-width: 90%;            /* Responsive scaling */
-  height: auto;
-  object-fit: cover;         /* Keeps proportions clean */
-  border-radius: 12px;       /* Smooth modern edges */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Soft premium shadow */
-}
+        .hero-img {
+          width: 380px;
+          max-width: 90%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 180px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
 
-
-        .tagline {
+        .tagline,
+        h2.tagline {
           font-size: 18px;
           font-style: italic;
           letter-spacing: 1.6px;
           opacity: 0.9;
+          font-weight: normal;
+          margin: 0;
         }
 
         /* ==============================
@@ -93,7 +99,7 @@ export function HomePage() {
         }
 
         /* ==============================
-           ABOUT – FULL WIDTH SECTION
+           ABOUT SECTION
         ============================== */
         .about-wrapper {
           background: #f2f2f2;
@@ -114,7 +120,7 @@ export function HomePage() {
 
         .about-img {
           width: 100%;
-          border-radius: 2px;
+          border-radius: 9px;
         }
 
         .about h2 {
@@ -149,35 +155,33 @@ export function HomePage() {
         }
       `}</style>
 
-      {/* ==============================
-          HERO SECTION
-      ============================== */}
+      {/* HERO SECTION */}
       <section className="hero">
         <div className="hero-img-wrapper">
           <img
-            src="images/aryanbasnet.png"
-            alt="aryan basnet photo"
+            src="/images/aryanbasnet.png"
+            alt="Aryan Basnet"
             className="hero-img"
           />
         </div>
-        <div className="name">Aryan Basnet</div>
+
+        <h1 className="name">Aryan Basnet</h1>
+
         <div className="pronouns">PRONOUNS: HE / HIM</div>
 
-        <div className="tagline">
+        <h2 className="tagline">
           COMPUTERPHILE | SOCIAL ENTREPRENEUR | DESIGNER
-        </div>
+        </h2>
       </section>
 
       <div className="divider" />
 
-      {/* ==============================
-          ABOUT SECTION
-      ============================== */}
+      {/* ABOUT SECTION */}
       <section className="about-wrapper">
         <div className="about">
           <img
             src="/images/aryanbasnet.png"
-            alt="aryan basnet photo"
+            alt="Aryan Basnet"
             className="about-img"
           />
 
@@ -189,6 +193,7 @@ export function HomePage() {
               entrepreneur, I'm the founder of a non-profit aiding in providing
               holistic education to disadvantaged students called ‘Vidhata’.
             </p>
+
             <p>
               With key expertise in social design, human-centric design, design
               thinking, and organizational leadership, I hope to spearhead
@@ -197,12 +202,7 @@ export function HomePage() {
               every problem with a unique 360-degree view that keeps the user at
               the centre of solution building.
             </p>
-            {/* <p>
-              I describe myself as an Artist at heart. I'm a semi-professional
-              artist with 8 years of experience in Fine Art. I hope to build
-              every venture on this foundation of left and right brain
-              abilities.
-            </p> */}
+
             <a
               href="https://docs.google.com/document/d/1cQZ2WPyHhvMtswRcPlpzA0tDWr26PqCdDeZoNvEQnes/edit?usp=sharing"
               target="_blank"
