@@ -32,37 +32,18 @@ export function HomePage() {
           background: #ffffff;
         }
 
-        /* ==============================
-           GLOBAL TYPOGRAPHY
-        ============================== */
         .site-root {
           font-family: Georgia, "Times New Roman", serif;
           color: #111;
           text-align: center;
+          overflow-x: hidden;
         }
 
         /* ==============================
            HERO SECTION
         ============================== */
         .hero {
-          padding: 110px 24px 48px;
-        }
-
-        .name,
-        h1.name {
-          font-size: 72px;
-          font-weight: 700;
-          color: #7a0c0c;
-          margin-top: 0;
-          margin-bottom: 16px;
-          letter-spacing: 0.5px;
-        }
-
-        .pronouns {
-          font-size: 15px;
-          letter-spacing: 2px;
-          margin-bottom: 40px;
-          opacity: 0.85;
+          padding: 120px 24px 60px;
         }
 
         .hero-img-wrapper {
@@ -72,22 +53,41 @@ export function HomePage() {
         }
 
         .hero-img {
-          width: 380px;
-          max-width: 90%;
+          width: min(380px, 90vw);
           height: auto;
           object-fit: cover;
-          border-radius: 180px;
+          border-radius: 999px;
           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .name,
+        h1.name {
+          font-size: clamp(2.5rem, 7vw, 4.5rem);
+          font-weight: 700;
+          color: #7a0c0c;
+          margin: 0 0 16px;
+          line-height: 1.1;
+          letter-spacing: 0.5px;
+        }
+
+        .pronouns {
+          font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+          letter-spacing: 2px;
+          margin-bottom: 32px;
+          opacity: 0.85;
         }
 
         .tagline,
         h2.tagline {
-          font-size: 18px;
+          font-size: clamp(0.9rem, 2vw, 1.15rem);
           font-style: italic;
-          letter-spacing: 1.6px;
-          opacity: 0.9;
           font-weight: normal;
-          margin: 0;
+          letter-spacing: 1.2px;
+          line-height: 1.7;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 16px;
+          opacity: 0.9;
         }
 
         /* ==============================
@@ -110,49 +110,162 @@ export function HomePage() {
         .about {
           max-width: 1200px;
           margin: 0 auto;
-          padding: 110px 48px 160px;
+          padding: 110px 48px 140px;
+
           display: grid;
-          grid-template-columns: 460px 1fr;
+          grid-template-columns: minmax(320px, 460px) 1fr;
           gap: 80px;
-          align-items: start;
+
+          align-items: center;
           text-align: left;
         }
 
         .about-img {
           width: 100%;
-          border-radius: 9px;
-        }
+          max-width: 460px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          border-radius: 12px;
+          object-fit: cover;
+}
 
         .about h2 {
-          font-size: 52px;
+          font-size: clamp(2rem, 5vw, 3.25rem);
           color: #7a0c0c;
-          margin: -10px 0 32px;
+          margin: 0 0 32px;
           letter-spacing: 0.6px;
         }
 
         .about p {
-          font-size: 20px;
-          line-height: 1.85;
-          margin-bottom: 26px;
+          font-size: clamp(1rem, 1.6vw, 1.25rem);
+          line-height: 1.9;
+          margin-bottom: 24px;
         }
 
         /* ==============================
            BUTTON
         ============================== */
         .resume-btn {
-          margin-top: 32px;
+          margin-top: 12px;
           padding: 18px 40px;
           background: #000;
           color: #fff;
           border: none;
           font-size: 18px;
           cursor: pointer;
-          transition: opacity 0.25s ease;
+          transition: all 0.25s ease;
         }
 
         .resume-btn:hover {
           opacity: 0.85;
+          transform: translateY(-2px);
         }
+
+        /* ==============================
+           TABLET
+        ============================== */
+       @media (max-width: 1024px) {
+  .hero {
+    padding: 100px 24px 50px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 90px 40px 110px;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .about p {
+    text-align: left;
+  }
+}
+
+        /* ==============================
+           MOBILE
+        ============================== */
+        @media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px 40px;
+  }
+
+  .hero-img {
+    width: min(260px, 80vw);
+  }
+
+  .tagline,
+  h2.tagline {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .about {
+    padding: 70px 24px 90px;
+    gap: 35px;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .about h2 {
+    text-align: center;
+  }
+
+  .about p {
+    text-align: left;
+  }
+
+  .resume-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+}
+        /* ==============================
+           SMALL PHONES
+        ============================== */
+       @media (max-width: 480px) {
+  .hero {
+    padding: 70px 16px 36px;
+  }
+
+  .hero-img {
+    width: min(220px, 75vw);
+  }
+
+  .tagline,
+  h2.tagline {
+    max-width: 280px;
+    letter-spacing: 0.8px;
+  }
+
+  .about {
+    padding: 60px 20px 80px;
+  }
+
+  .about-img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
       `}</style>
 
       {/* HERO SECTION */}
@@ -189,18 +302,19 @@ export function HomePage() {
             <h2>ABOUT ME</h2>
 
             <p>
-              Hi! I’m Aryan Basnet, graduate of Rato Bangala School. As a social
-              entrepreneur, I'm the founder of a non-profit aiding in providing
-              holistic education to disadvantaged students called ‘Vidhata’.
+              Hi! I’m Aryan Basnet, a graduate of Rato Bangala School. As a
+              social entrepreneur, I am the founder of Vidhata, a non-profit
+              organization dedicated to providing holistic educational
+              opportunities to disadvantaged students.
             </p>
 
             <p>
-              With key expertise in social design, human-centric design, design
-              thinking, and organizational leadership, I hope to spearhead
-              change in my community through being an inventor. Using technology
-              and design thinking as my foothold for innovation, I approach
-              every problem with a unique 360-degree view that keeps the user at
-              the centre of solution building.
+              With expertise in social design, human-centered design, design
+              thinking, and organizational leadership, I aspire to drive
+              meaningful change through innovation. By combining technology with
+              design thinking, I approach challenges from a 360-degree
+              perspective, ensuring that people remain at the center of every
+              solution.
             </p>
 
             <a

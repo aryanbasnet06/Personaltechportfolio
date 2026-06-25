@@ -31,6 +31,7 @@ export default function Footer({
           position: relative;
           z-index: 99999;
           isolation: isolate;
+          overflow-x: hidden;
         }
 
         .footer-container {
@@ -43,25 +44,30 @@ export default function Footer({
 
         .footer-title {
           font-family: Georgia, "Times New Roman", serif;
-          font-size: 42px;
+          font-size: clamp(2rem, 5vw, 2.8rem);
           font-weight: 400;
           margin-bottom: 40px;
+          line-height: 1.2;
         }
 
         .footer-nav {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 36px;
+          gap: 18px 32px;
           font-size: 14px;
           letter-spacing: 1px;
           margin-bottom: 48px;
+          max-width: 900px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .footer-nav span {
           cursor: pointer;
           opacity: 0.95;
           transition: color 0.25s ease, opacity 0.25s ease;
+          line-height: 1.6;
         }
 
         .footer-nav span:hover {
@@ -72,13 +78,15 @@ export default function Footer({
         .footer-socials {
           display: flex;
           justify-content: center;
+          align-items: center;
           gap: 22px;
           margin-bottom: 40px;
+          flex-wrap: wrap;
         }
 
         .footer-icon {
-          width: 48px;
-          height: 48px;
+          width: 50px;
+          height: 50px;
           background: #ffffff;
           color: #6b0000;
           border-radius: 50%;
@@ -86,12 +94,12 @@ export default function Footer({
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
+          transition: all 0.25s ease;
         }
 
         .footer-icon:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
         }
 
         .footer-icon a {
@@ -101,14 +109,84 @@ export default function Footer({
           width: 100%;
           height: 100%;
           color: inherit;
+          text-decoration: none;
         }
 
         .footer-top {
           display: flex;
           justify-content: center;
-          font-size: 20px;
+          align-items: center;
+          width: 42px;
+          height: 42px;
+          margin: 0 auto;
+          border-radius: 50%;
           cursor: pointer;
+          font-size: 22px;
+          transition: all 0.25s ease;
           opacity: 0.85;
+        }
+
+        .footer-top:hover {
+          opacity: 1;
+          transform: translateY(-3px);
+        }
+
+        /* ==========================
+           TABLET
+        ========================== */
+        @media (max-width: 768px) {
+          .footer-container {
+            padding: 70px 20px 35px;
+          }
+
+          .footer-nav {
+            gap: 14px 24px;
+            font-size: 13px;
+            margin-bottom: 40px;
+          }
+
+          .footer-socials {
+            gap: 18px;
+          }
+
+          .footer-icon {
+            width: 46px;
+            height: 46px;
+          }
+        }
+
+        /* ==========================
+           MOBILE
+        ========================== */
+        @media (max-width: 480px) {
+          .footer-container {
+            padding: 60px 16px 30px;
+          }
+
+          .footer-title {
+            margin-bottom: 32px;
+          }
+
+          .footer-nav {
+            flex-direction: column;
+            gap: 12px;
+            font-size: 13px;
+            margin-bottom: 36px;
+          }
+
+          .footer-socials {
+            gap: 14px;
+            margin-bottom: 30px;
+          }
+
+          .footer-icon {
+            width: 42px;
+            height: 42px;
+          }
+
+          .footer-top {
+            font-size: 20px;
+          }
         }
       `}</style>
 
@@ -125,7 +203,6 @@ export default function Footer({
           </nav>
 
           <div className="footer-socials">
-            {/* Instagram */}
             <div className="footer-icon">
               <a
                 href="https://www.instagram.com/__aryanbasnet__/"
@@ -137,7 +214,6 @@ export default function Footer({
               </a>
             </div>
 
-            {/* Gmail */}
             <div className="footer-icon">
               <a
                 href="mailto:basnetaryan05@gmail.com"
@@ -149,7 +225,6 @@ export default function Footer({
               </a>
             </div>
 
-            {/* YouTube */}
             <div className="footer-icon">
               <a
                 href="https://www.youtube.com/@techwitharyan05/featured"
