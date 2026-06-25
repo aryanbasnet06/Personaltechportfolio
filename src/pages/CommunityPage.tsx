@@ -258,13 +258,10 @@ export function CommunityPage() {
           }
         }
       `}</style>
-
       {/* ================= CONTENT ================= */}
-
       <div className="container">
         <h1 className="page-title">Social Impact Initiatives</h1>
       </div>
-
       <div className="initiative-section">
         <div className="initiative-grid">
           <div>
@@ -310,8 +307,153 @@ export function CommunityPage() {
           </div>
         </div>
       </div>
-
       {/* IMPACT */}
+
+      <style>{`
+.impact-section {
+  padding: 120px 24px 80px;
+  text-align: center;
+}
+
+.impact-title {
+  font-family: "Georgia", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #7a0f0f;
+  margin-bottom: 70px;
+  line-height: 1.2;
+}
+
+.impact-grid {
+  display: grid;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.impact-grid.top {
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  max-width: 750px;
+  margin-bottom: 32px;
+}
+
+.impact-grid.bottom {
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  max-width: 1100px;
+}
+
+.impact-card {
+  padding: 42px 24px;
+  color: white;
+  font-family: "Georgia", serif;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    filter 0.4s ease;
+  min-height: 180px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.06);
+}
+
+.pink {
+  background: #c29b9b;
+}
+
+.maroon {
+  background: #7a3333;
+}
+
+.dark-maroon {
+  background: #6d0000;
+}
+
+.grey {
+  background: #6b645c;
+}
+
+.impact-number {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.impact-label {
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  line-height: 1.5;
+  max-width: 220px;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+  .impact-section {
+    padding: 90px 24px 70px;
+  }
+
+  .impact-grid.top,
+  .impact-grid.bottom {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+
+  .impact-card {
+    min-height: 170px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .impact-title {
+    margin-bottom: 50px;
+  }
+
+  .impact-grid.top,
+  .impact-grid.bottom {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    gap: 20px;
+  }
+
+  .impact-card {
+    min-height: 140px;
+    padding: 32px 20px;
+  }
+
+  .impact-number {
+    margin-bottom: 10px;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  .impact-section {
+    padding: 70px 16px 60px;
+  }
+
+  .impact-grid.top,
+  .impact-grid.bottom {
+    max-width: 100%;
+  }
+
+  .impact-card {
+    min-height: 130px;
+    padding: 28px 16px;
+  }
+
+  .impact-label {
+    max-width: 180px;
+  }
+}`}</style>
       <div className="impact-section">
         <h2 className="impact-title">Vidhata’s Impact in Numbers</h2>
 
@@ -344,7 +486,6 @@ export function CommunityPage() {
           </div>
         </div>
       </div>
-
       {/* RECOGNITION */}
       <div className="recognition-section">
         <div className="container">
@@ -374,7 +515,6 @@ export function CommunityPage() {
           </div>
         </div>
       </div>
-
       {/* STORIES */}
       <div className="container stories-section">
         <div className="stories-grid">
