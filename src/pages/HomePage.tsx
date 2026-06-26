@@ -272,7 +272,7 @@ export function HomePage() {
       <section className="hero">
         <div className="hero-img-wrapper">
           <img
-            src="/images/aryanbasnet.png"
+            src="/images/aryanbasnet.jpg"
             alt="Aryan Basnet"
             className="hero-img"
           />
@@ -293,7 +293,7 @@ export function HomePage() {
       <section className="about-wrapper">
         <div className="about">
           <img
-            src="/images/aryanbasnet.png"
+            src="/images/aryanbasnet.jpg"
             alt="Aryan Basnet"
             className="about-img"
           />
