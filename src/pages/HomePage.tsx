@@ -272,7 +272,7 @@ export function HomePage() {
       <section className="hero">
         <div className="hero-img-wrapper">
           <img
-            src="/images/aryanbasnet.jpg"
+            src="/images/AryanBasnet_founder_final.png"
             alt="Aryan Basnet"
             className="hero-img"
           />
