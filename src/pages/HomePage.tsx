@@ -293,7 +293,7 @@ export function HomePage() {
       <section className="about-wrapper">
         <div className="about">
           <img
-            src="/images/aryanbasnet.jpg"
+            src="/images/AryanBasnet_founder_final.png"
             alt="Aryan Basnet"
             className="about-img"
           />
