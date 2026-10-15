@@ -283,7 +283,7 @@ export function HomePage() {
         <div className="pronouns">PRONOUNS: HE / HIM</div>
 
         <h2 className="tagline">
-          COMPUTERPHILE | SOCIAL ENTREPRENEUR | DESIGNER
+          COMPUTERPHILE | SOCIAL ENTREPRENEUR | POLICY RESEARCHER
         </h2>
       </section>
 
