@@ -317,14 +317,16 @@ export function HomePage() {
               solution.
             </p>
 
-            <a
-              href="https://docs.google.com/document/d/1cQZ2WPyHhvMtswRcPlpzA0tDWr26PqCdDeZoNvEQnes/edit?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#fff", textDecoration: "none" }}
-            >
-              <button className="resume-btn">Check out my resume</button>
-            </a>
+            
+    <a
+      href="/images/AryanBasnet_Resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="resume-btn"
+    >
+      Check out my resume
+    </a>
+
           </div>
         </div>
       </section>
