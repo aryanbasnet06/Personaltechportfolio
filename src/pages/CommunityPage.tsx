@@ -459,19 +459,19 @@ export function CommunityPage() {
 
         <div className="impact-grid top">
           <div className="impact-card pink">
-            <div className="impact-number">120+</div>
+            <div className="impact-number">125+</div>
             <div className="impact-label">Volunteers Connected</div>
           </div>
 
           <div className="impact-card maroon">
-            <div className="impact-number">5600+</div>
+            <div className="impact-number">12,000+</div>
             <div className="impact-label">Students Impacted</div>
           </div>
         </div>
 
         <div className="impact-grid bottom">
           <div className="impact-card grey">
-            <div className="impact-number">18</div>
+            <div className="impact-number">30</div>
             <div className="impact-label">Partner Organizations</div>
           </div>
 
