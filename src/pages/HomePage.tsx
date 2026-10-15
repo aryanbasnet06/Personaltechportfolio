@@ -309,12 +309,7 @@ export function HomePage() {
             </p>
 
             <p>
-              With expertise in social design, human-centered design, design
-              thinking, and organizational leadership, I aspire to drive
-              meaningful change through innovation. By combining technology with
-              design thinking, I approach challenges from a 360-degree
-              perspective, ensuring that people remain at the center of every
-              solution.
+              With experience in AI engineering, policy research, and organizational leadership, I am interested in exploring how technology and better-designed systems can address real-world challenges. By bringing together technology, education, and social entrepreneurship, I aspire to develop meaningful solutions that expand access to learning and create greater opportunities for underserved communities.
             </p>
 
             

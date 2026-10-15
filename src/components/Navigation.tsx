@@ -40,7 +40,6 @@ export function Navigation({ currentPage, setCurrentPage }: NavigationProps) {
   const links = [
     ["home", "Home"],
     ["community", "Community Involvement"],
-    ["art", "Art & Culture"],
     ["projects", "Projects"],
     ["leadership", "Leadership"],
     ["work", "Work Experience"],
