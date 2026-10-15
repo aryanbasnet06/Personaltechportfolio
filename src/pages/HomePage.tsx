@@ -303,13 +303,13 @@ export function HomePage() {
 
             <p>
               Hi! I’m Aryan Basnet, a graduate of Rato Bangala School. As a
-              social entrepreneur, I am the founder of Vidhata, a non-profit
+              social entrepreneur, I'm the founder of Vidhata, a non-profit
               organization dedicated to providing holistic educational
               opportunities to disadvantaged students.
             </p>
 
             <p>
-              With experience in AI engineering, policy research, and organizational leadership, I am interested in exploring how technology and better-designed systems can address real-world challenges. By bringing together technology, education, and social entrepreneurship, I aspire to develop meaningful solutions that expand access to learning and create greater opportunities for underserved communities.
+              With experience in AI engineering, policy research, and organizational leadership, I'm interested in exploring how technology and better-designed systems can address real-world challenges. By bringing together technology, education, and social entrepreneurship, I aspire to develop meaningful solutions that expand access to learning and create greater opportunities for underserved communities.
             </p>
 
             
