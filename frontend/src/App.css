@@ -2,7 +2,7 @@
 @media (min-width: 768px) { .container-x { padding-left: 40px; padding-right: 40px; } }
 @media (min-width: 1280px) { .container-x { padding-left: 56px; padding-right: 56px; } }
 
-.display-hero { font-family: var(--serif); font-weight: 500; font-size: clamp(5rem, 15vw, 13rem); line-height: 0.86; letter-spacing: -0.03em; color: #1c1917; }
+.display-hero { font-family: var(--serif); font-weight: 500; font-size: clamp(4.2rem, min(14vw, 17.5vh), 12.5rem); line-height: 0.86; letter-spacing: -0.03em; color: #1c1917; }
 .display-hero > span:nth-child(2) > span { color: var(--maroon); font-style: italic; padding-left: 0.42em; }
 @media (max-width: 640px) { .display-hero > span:nth-child(2) > span { padding-left: 0.3em; } }
 .display-xl { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 8vw, 7rem); line-height: 0.95; letter-spacing: -0.03em; color: var(--ink); }
@@ -19,7 +19,7 @@
 @media (min-width: 1024px) { .tagline { white-space: nowrap; } }
 .cursor-blink { display: inline-block; vertical-align: -0.15em; width: 9px; height: 1.1em; margin-left: 10px; background: var(--maroon); animation: blink 1.05s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-.hero-intro { font-family: var(--serif); font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.35; color: #1c1917; }
+.hero-intro { font-family: var(--serif); font-size: clamp(1.4rem, min(2.2vw, 3.4vh), 2rem); line-height: 1.35; color: #1c1917; }
 .logo-lockup { display: inline-flex; align-items: center; gap: 12px; padding: 5px 14px 5px 5px; border: 1.5px solid var(--maroon); transition: background-color 0.3s; }
 .logo-lockup:hover { background: #f6f3ee; }
 .pronoun-pill { display: inline-flex; padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.2em; color: var(--maroon); background: #fff; }
@@ -46,7 +46,7 @@
 .mobile-link.is-active, .mobile-link:hover { color: var(--maroon); padding-left: 8px; }
 
 /* buttons */
-.btn-dark, .btn-outline { display: inline-flex; align-items: center; gap: 12px; min-height: 58px; padding: 0 32px; border-radius: 999px; font-size: 16px; font-weight: 500; transition: background-color 0.3s, color 0.3s, transform 0.3s cubic-bezier(.22,1,.36,1), border-color 0.3s; }
+.btn-dark, .btn-outline { display: inline-flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 28px; border-radius: 999px; font-size: 16px; font-weight: 500; transition: background-color 0.3s, color 0.3s, transform 0.3s cubic-bezier(.22,1,.36,1), border-color 0.3s; }
 .btn-dark { background: #1c1917; color: #fff; }
 .btn-dark:hover { background: var(--maroon); transform: translateY(-2px); }
 .btn-outline { border: 1.5px solid #1c1917; color: #1c1917; }

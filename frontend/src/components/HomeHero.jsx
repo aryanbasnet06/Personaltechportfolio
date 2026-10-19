@@ -58,13 +58,13 @@ export const HomeHero = () => {
   return (
     <section ref={ref} className="hero-wrap relative overflow-hidden" data-testid="home-hero">
       <div className="hero-lines" aria-hidden="true" />
-      <div className="container-x relative grid gap-20 pt-32 pb-28 md:pt-40 lg:grid-cols-12 lg:items-center lg:gap-10">
+      <div className="container-x relative grid gap-20 pt-28 pb-24 md:pt-32 lg:min-h-[100svh] lg:grid-cols-12 lg:items-center lg:gap-10 lg:pt-24 lg:pb-12">
         <div className="lg:col-span-7 relative z-10">
           <motion.div {...fade(0)} className="mono-label flex items-center gap-3" data-testid="hero-pronouns">
             <span className="diamond" /> <Decode text="PRONOUNS: HE / HIM" delay={150} />
           </motion.div>
-          <MaskLines lines={["Aryan", "Basnet"]} className="display-hero mt-8" delay={0.15} testid="hero-name" />
-          <motion.h2 {...fade(0.5)} className="tagline mt-12" data-testid="hero-tagline">
+          <MaskLines lines={["Aryan", "Basnet"]} className="display-hero mt-6" delay={0.15} testid="hero-name" />
+          <motion.h2 {...fade(0.5)} className="tagline mt-8" data-testid="hero-tagline">
             {ROLES.map((r, i) => (
               <span key={r} className="block whitespace-nowrap sm:inline">
                 {i > 0 && <span className="tagline-sep text-maroon">|</span>}
@@ -73,10 +73,10 @@ export const HomeHero = () => {
             ))}
             <span className="cursor-blink" aria-hidden="true" />
           </motion.h2>
-          <motion.p {...fade(0.7)} className="hero-intro mt-8 max-w-2xl" data-testid="hero-intro">
+          <motion.p {...fade(0.7)} className="hero-intro mt-5 max-w-2xl" data-testid="hero-intro">
             I work at the intersection of <em className="text-maroon">technology, education, and social development.</em>
           </motion.p>
-          <motion.div {...fade(0.85)} className="mt-12 flex flex-wrap gap-4">
+          <motion.div {...fade(0.85)} className="mt-8 flex flex-wrap gap-4">
             <a href="#about-me" onClick={(e) => { e.preventDefault(); scrollToTarget("#about-me"); }} className="btn-dark focus-ring" data-testid="hero-more-about-me">
               More about me <ArrowDown size={17} className="btn-arrow-down" />
             </a>
