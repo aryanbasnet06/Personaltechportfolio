@@ -1,9 +1,13 @@
 export const Logo = ({ className = "h-10 w-10", inverted = false }) => (
   <svg viewBox="0 0 64 64" className={className} aria-hidden="true">
-    <rect x="1" y="1" width="62" height="62" rx="18" fill={inverted ? "#ffffff" : "#7a0c0c"} />
-    <text x="32" y="42" textAnchor="middle" fontFamily="Newsreader, Georgia, serif" fontSize="28" fontWeight="500" letterSpacing="-1" fill={inverted ? "#6b0000" : "#ffffff"}>
-      AB
-    </text>
-    <rect x="18" y="48" width="28" height="2" rx="1" fill={inverted ? "#ad7158" : "#c29b9b"} />
+    <rect width="64" height="64" rx="6" fill={inverted ? "#ffffff" : "#7a0c0c"} />
+    <path d="M19 48 L32 15 L45 48" fill="none" stroke={inverted ? "#6b0000" : "#ffffff"} strokeWidth="5.5" strokeLinecap="square" strokeLinejoin="miter" />
   </svg>
+);
+
+export const LogoLockup = () => (
+  <span className="logo-lockup">
+    <Logo className="h-9 w-9" />
+    <span className="font-serif text-[22px] leading-none tracking-tight text-ink">Aryan Basnet</span>
+  </span>
 );

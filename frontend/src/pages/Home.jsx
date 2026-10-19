@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, FileText, Play } from "lucide-react";
+import { ArrowUpRight, FileText } from "lucide-react";
 import { HomeHero } from "../components/HomeHero";
 import { Marquee } from "../components/Marquee";
 import { Reveal, Eyebrow } from "../components/Motion";
-import { ABOUT, EXPLORE, RESUME, TITAN } from "../data/content";
+import { ABOUT, EXPLORE, RESUME } from "../data/content";
 
 const About = () => (
-  <section id="about-me" className="bg-paper py-24 md:py-32" data-testid="about-section">
+  <section id="about-me" className="bg-paper py-24 md:py-32 border-t border-line" data-testid="about-section">
     <div className="container-x grid gap-14 lg:grid-cols-12 lg:gap-16">
       <Reveal className="lg:col-span-5">
         <div className="about-frame">
@@ -27,32 +27,6 @@ const About = () => (
           </a>
         </Reveal>
       </div>
-    </div>
-  </section>
-);
-
-const TitanTeaser = () => (
-  <section className="bg-white py-24 md:py-32" data-testid="home-titan-teaser">
-    <div className="container-x">
-      <Reveal className="titan-teaser group">
-        <Link to="/projects#titan-city" className="grid overflow-hidden rounded-[28px] bg-night text-white lg:grid-cols-12 focus-ring" data-testid="home-titan-link">
-          <div className="relative aspect-video overflow-hidden lg:col-span-7 lg:aspect-auto lg:min-h-[420px]">
-            <img src={TITAN.image} alt="Titan City gameplay: an astronaut on a road in a colourful alien city" loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1.4s] ease-out group-hover:scale-[1.05]" />
-          </div>
-          <div className="flex flex-col justify-between gap-10 p-8 md:p-12 lg:col-span-5">
-            <div>
-              <Eyebrow light>New project</Eyebrow>
-              <h3 className="mt-6 font-serif text-5xl md:text-6xl leading-none">{TITAN.title}</h3>
-              <p className="mt-3 text-xs tracking-[0.2em] text-[#f3d9d9]">{TITAN.category.toUpperCase()}</p>
-              <p className="mt-6 text-lg leading-relaxed text-white/85">{TITAN.description}</p>
-            </div>
-            <span className="inline-flex items-center gap-3 text-sm font-medium">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-white text-maroon transition-transform duration-500 group-hover:scale-110"><Play size={16} fill="currentColor" /></span>
-              Watch Demo
-            </span>
-          </div>
-        </Link>
-      </Reveal>
     </div>
   </section>
 );
@@ -86,7 +60,6 @@ export default function Home() {
       <HomeHero />
       <Marquee />
       <About />
-      <TitanTeaser />
       <Explore />
     </main>
   );

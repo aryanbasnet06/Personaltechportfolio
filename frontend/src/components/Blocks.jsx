@@ -43,7 +43,7 @@ export const Gallery = ({ title, items, testid, cols = "md:grid-cols-3" }) => (
 );
 
 export const Section = ({ tone = "white", className = "", children, testid, id }) => (
-  <section id={id} className={`${tone === "grey" ? "bg-paper" : "bg-white"} py-20 md:py-28 ${className}`} data-testid={testid}>
+  <section id={id} className={`${tone === "grey" ? "bg-paper" : "bg-cream"} py-20 md:py-28 ${className}`} data-testid={testid}>
     <div className="container-x">{children}</div>
   </section>
 );

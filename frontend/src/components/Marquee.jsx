@@ -13,7 +13,7 @@ export const Marquee = () => {
     </div>
   );
   return (
-    <div className="marquee border-y border-line bg-white py-7 md:py-9" data-testid="home-marquee">
+    <div className="marquee border-y border-line bg-cream py-7 md:py-9" data-testid="home-marquee">
       <span className="sr-only">{MARQUEE.join(", ")}</span>
       <div className="marquee-track">{row}{row}</div>
     </div>

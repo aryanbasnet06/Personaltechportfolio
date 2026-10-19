@@ -40,7 +40,7 @@ export default function Work() {
   return (
     <main data-testid="page-work">
       <PageIntro eyebrow="Work Experience" lines={["Work", "Experience"]} testid="work-intro" />
-      <section className="bg-white pb-28">
+      <section className="bg-cream pb-28">
         <div className="container-x space-y-24">
           {WORK.map((w, i) => <Entry key={w.id} w={w} index={i} />)}
         </div>

@@ -4,7 +4,7 @@ import { FESTIVALS } from "../data/content";
 
 const Festival = ({ f, index }) => (
   <article id={f.id} data-testid={`festival-${f.id}`}>
-    <section className="bg-white pt-24 pb-16 md:pt-32">
+    <section className="bg-cream pt-24 pb-16 md:pt-32">
       <div className="container-x grid gap-6 lg:grid-cols-12 lg:items-end">
         <div className="lg:col-span-7">
           <Reveal><Eyebrow>{`0${index + 1} — ${f.subtitle}`}</Eyebrow></Reveal>

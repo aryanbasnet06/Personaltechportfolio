@@ -23,6 +23,12 @@ Redesign my existing personal technology portfolio website, aryanbasnet2006.com.
 - Contact form wired to backend with toasts
 - SEO meta/OG/JSON-LD/canonical preserved and extended; per-page titles
 
+## Iteration 2 (2026-10-19)
+- Landing hero rebuilt to match user's reference screenshot (cream bg, hairlines, "FIG. 01" tilted photo card, rotating badge, black/outline pill CTAs)
+- Fonts: Cormorant Garamond + Geist + Geist Mono; warm cream palette site-wide; Λ logo lockup + favicon
+- Tech motion: decode/scramble mono labels, blinking cursor, scan line on portrait, sweep line on hero grid
+- Removed Titan City teaser from home; removed Art & Culture from header/footer/explore (/art still reachable by URL)
+
 ## Backlog
 - P1: Replace Titan City thumbnail with user's actual image when provided
 - P1: Simple admin page to read contact submissions

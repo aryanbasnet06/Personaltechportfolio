@@ -9,12 +9,14 @@
     --soft: #4f4f4f;
     --pink: #c29b9b;
     --brown: #ad7158;
-    --mist: #f2f2f2;
-    --paper: #f7f7f7;
-    --line: #e4e4e4;
-    --line-strong: #d4d4d4;
-    --serif: "Newsreader", Georgia, "Times New Roman", serif;
-    --sans: "Hanken Grotesk", "Inter", system-ui, sans-serif;
+    --mist: #e4dfd6;
+    --paper: #e8e3da;
+    --cream: #efebe4;
+    --line: #d9d3c8;
+    --line-strong: #c7c0b4;
+    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --sans: "Geist", system-ui, sans-serif;
+    --mono: "Geist Mono", ui-monospace, monospace;
 }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -25,7 +27,7 @@ body {
     margin: 0;
     font-family: var(--sans);
     color: var(--ink);
-    background: #fff;
+    background: var(--cream);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;

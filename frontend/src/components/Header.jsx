@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Logo } from "./Logo";
+import { LogoLockup } from "./Logo";
 import { NAV } from "../data/content";
 
 const slug = (to) => (to === "/" ? "home" : to.slice(1));
@@ -27,11 +27,10 @@ export const Header = () => {
   return (
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`} data-testid="site-header">
       <div className="container-x flex h-[76px] items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 focus-ring rounded-xl" data-testid="nav-logo" aria-label="Aryan Basnet, home">
-          <Logo className="h-10 w-10" />
-          <span className="hidden font-serif text-lg tracking-tight text-ink sm:block">Aryan Basnet</span>
+        <Link to="/" className="focus-ring" data-testid="nav-logo" aria-label="Aryan Basnet, home">
+          <LogoLockup />
         </Link>
-        <nav className="hidden xl:flex items-center gap-7" aria-label="Primary">
+        <nav className="hidden xl:flex items-center gap-9" aria-label="Primary">
           {NAV.map(([to, label]) => (
             <NavLink key={to} to={to} end={to === "/"} data-testid={`nav-link-${slug(to)}`} className={({ isActive }) => `nav-link focus-ring ${isActive ? "is-active" : ""}`}>
               {label}

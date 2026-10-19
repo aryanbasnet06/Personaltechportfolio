@@ -15,8 +15,9 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)'
       },
       fontFamily: {
-        serif: ['Newsreader', 'Georgia', 'serif'],
-        sans: ['"Hanken Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['Geist', 'system-ui', 'sans-serif'],
+        mono: ['"Geist Mono"', 'ui-monospace', 'monospace'],
       },
       colors: {
         maroon: '#7a0c0c',
@@ -25,9 +26,10 @@ module.exports = {
         soft: '#4f4f4f',
         pink: '#c29b9b',
         'brown-ink': '#8a5440',
-        mist: '#f2f2f2',
-        paper: '#f7f7f7',
-        line: '#e4e4e4',
+        mist: '#e4dfd6',
+        paper: '#e8e3da',
+        cream: '#efebe4',
+        line: '#d9d3c8',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

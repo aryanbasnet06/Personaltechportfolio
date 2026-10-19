@@ -3,7 +3,6 @@ export const img = (name) => `/images/opt/${name}.webp`;
 export const NAV = [
   ["/", "Home"],
   ["/community", "Community Involvement"],
-  ["/art", "Art & Culture"],
   ["/projects", "Projects"],
   ["/leadership", "Leadership"],
   ["/work", "Work Experience"],
@@ -27,10 +26,9 @@ export const MARQUEE = ["Computerphile", "Social Entrepreneur", "Policy Research
 
 export const EXPLORE = [
   { to: "/community", label: "Community Involvement", note: "Social Impact Initiatives", image: img("vidhata") },
-  { to: "/projects", label: "Projects", note: "Titan City, research, a book & Tech With Aryan", image: img("titan-city") },
+  { to: "/projects", label: "Projects", note: "Research, a book & Tech With Aryan", image: img("youtube_channel") },
   { to: "/leadership", label: "Leadership", note: "Quiz Team & Programming and Robotics Club", image: img("rbs_quiz_team") },
   { to: "/work", label: "Work Experience", note: "Entrepreneurial & professional experience", image: img("presentation") },
-  { to: "/art", label: "Art & Culture", note: "Dashain & Tihar", image: img("Tihar1") },
   { to: "/contact", label: "Contact", note: "Request a call or send a mail", image: img("AryanBasnet_founder_final") },
 ];
 
