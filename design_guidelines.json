@@ -1,0 +1,119 @@
+{
+  "theme": "light",
+  "typography": {
+    "headings": "Playfair Display, Cormorant Garamond, or similar elegant Serif font to replace Georgia.",
+    "body": "Inter",
+    "strategy": "Oversized serif headlines paired with restrained body copy. High-contrast typography systems. Masked line-by-line hero reveal on load. Avoid excessive font combos, stick to 1 serif and 1 sans-serif."
+  },
+  "colors": {
+    "primary": "#7a0c0c",
+    "secondary": "#6b0000",
+    "accent_dark": "#6b0f0f",
+    "white": "#ffffff",
+    "light_grey_1": "#f2f2f2",
+    "light_grey_2": "#f7f7f7",
+    "near_black": "#2b2b2b",
+    "muted_pink": "#c29b9b",
+    "warm_brown": "#ad7158",
+    "strategy": "Preserve the existing identity. Use deep maroon and warm brown for key brand moments and serifs, white and light grey for expansive negative space and backgrounds, near-black for body text."
+  },
+  "visual_enhancers": {
+    "marquee": "One slow editorial marquee with a serif font (e.g. tracking-[0.1em]), very slow smooth drift.",
+    "parallax": "One subtle parallax/3D hero moment. Not overly complicated, maybe a slight image scale or layering effect on scroll.",
+    "scroll": "Lenis smooth scrolling.",
+    "animations": "Framer-motion scroll reveals (fade up, slow and elegant). Respect reduced motion via CSS or framer-motion hook.",
+    "monogram": "Create a custom SVG 'AB' monogram logo/favicon to replace the existing text logo.",
+    "no_clutter": "Avoid excessive gradients/glassmorphism/clutter. Use solid colors with crisp contrast and restrained, purposeful animation."
+  },
+  "layouts": {
+    "hero": "Asymmetric hero composition. Large serif text revealing line-by-line on load. Profile photo 'aryanbasnet.png' carefully positioned with a subtle parallax effect.",
+    "bento_grids": "Use tight or loose grid strategies depending on content (e.g., 4-photo grids in Community/Leadership).",
+    "spacing": "Generous spacing. py-24, py-32 for sections. Let the serif type breathe. Wide margins."
+  },
+  "pages": {
+    "/": {
+      "path": "/",
+      "content": "Hero with profile photo, name 'Aryan Basnet', 'PRONOUNS: HE / HIM', 'COMPUTERPHILE | SOCIAL ENTREPRENEUR | POLICY RESEARCHER', intro line 'I work at the intersection of technology, education, and social development.', 'More about me' link. About Me section with founder photo, verbatim text, and resume button linking to the PDF.",
+      "components": "Hero section with masked reveal, about section, marquee."
+    },
+    "/community": {
+      "path": "/community",
+      "content": "Vidhata nonprofit text+logo+photo, Impact in Numbers (125+ volunteers, 12,000+ students, 30 partner orgs, 450+ lecture hours, 12 districts). Glocal Teen Hero 2024 recognition (award image+logo+link). Success Stories 4-photo grid, Training Cohorts 4-photo grid."
+    },
+    "/art": {
+      "path": "/art",
+      "content": "Dashain and Tihar sections with text, 4 essence cards each, and relevant photos."
+    },
+    "/projects": {
+      "path": "/projects",
+      "content": "Titan City first as featured (Educational Game / EdTech; 'An interactive educational game that teaches students about the solar system through engaging missions and gameplay.'; embedded video ID Ng4upY_2MVQ, image = YouTube thumbnail). Research paper on AI in Nepal govt schools (3 features). Book 'Machine Learning for High Schoolers' (cover + 3 features). YouTube channel Tech With Aryan (+ 3 features + demo video)."
+    },
+    "/leadership": {
+      "path": "/leadership",
+      "content": "Quiz team founder/captain + roles + 3-photo gallery. Robotics club VP + assistive glove + 4 highlight cards + 3-photo gallery."
+    },
+    "/work": {
+      "path": "/work",
+      "content": "Nabil fellowship (w/ bullets + 4 photos). NPF research intern (w/ logo + bullets). AI Engineer Hello World IT Solutions (w/ logo + bullets). Project Coordinator JANTRA (w/ logo + bullets)."
+    },
+    "/contact": {
+      "path": "/contact",
+      "content": "Request a Call form (first/last name, email, phone, message) - saves to database. Mail card (basnetaryan05@gmail.com)."
+    }
+  },
+  "global_components": {
+    "footer": "Maroon footer with navigation links, Instagram/Email/YouTube icons, and a back-to-top button."
+  },
+  "image_urls": {
+    "provided": [
+      "https://aryanbasnet2006.com.np/images/aryanbasnet.png (Hero Profile)",
+      "https://aryanbasnet2006.com.np/images/AryanBasnet_founder_final.png (About Me Founder Photo)",
+      "https://aryanbasnet2006.com.np/images/AryanBasnet_Resume.pdf (Resume PDF)",
+      "https://img.youtube.com/vi/Ng4upY_2MVQ/maxresdefault.jpg (Titan City Thumbnail)"
+    ],
+    "community_volunteers_training": [
+      "https://images.pexels.com/photos/8543390/pexels-photo-8543390.jpeg",
+      "https://images.pexels.com/photos/8543371/pexels-photo-8543371.jpeg",
+      "https://images.unsplash.com/photo-1758599668178-d9716bbda9d5",
+      "https://images.unsplash.com/photo-1560220604-1985ebfe28b1",
+      "https://images.unsplash.com/photo-1759143103540-78298031a86a"
+    ],
+    "art_culture_festivals": [
+      "https://images.pexels.com/photos/14546935/pexels-photo-14546935.jpeg",
+      "https://images.unsplash.com/photo-1699637568981-4a79d177e025"
+    ],
+    "leadership_quiz": [
+      "https://images.pexels.com/photos/32327241/pexels-photo-32327241.jpeg",
+      "https://images.unsplash.com/photo-1787931269349-73d91afc6f19"
+    ],
+    "leadership_robotics_lab": [
+      "https://images.pexels.com/photos/40117754/pexels-photo-40117754.jpeg",
+      "https://images.unsplash.com/photo-1707944745899-104a4b12d945"
+    ],
+    "work_corporate": [
+      "https://images.unsplash.com/photo-1758518731706-be5d5230e5a5",
+      "https://images.pexels.com/photos/12903168/pexels-photo-12903168.jpeg"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms.",
+    "Do NOT use complete transparent background in header, overlays, or any surface that has content under it.",
+    "Implement multiple separate pages (/, /community, /art, /projects, /leadership, /work, /contact) using React Router.",
+    "Implement 'Titan City' exactly as specified on the Projects page: first featured item, embedded YouTube video (ID Ng4upY_2MVQ), thumbnail as image.",
+    "The Contact form must simulate saving to a database or handle the submission appropriately.",
+    "Ensure 'AB' monogram is created as an SVG in the components and used in header/footer/favicon.",
+    "All interactive and key informational elements MUST include a data-testid attribute to facilitate robust automated testing."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts.",
+    "Avoid the center-everything disease. Asymmetry creates tension and interest."
+  ]
+}
