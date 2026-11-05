@@ -67,8 +67,6 @@
 /* hero */
 .hero-wrap { background: var(--cream); }
 .hero-lines { position: absolute; inset: 0; pointer-events: none; background-image: repeating-linear-gradient(180deg, transparent 0, transparent 269px, rgba(28,25,23,0.07) 269px, rgba(28,25,23,0.07) 270px); background-position: 0 210px; }
-.hero-lines::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; top: 0; background: linear-gradient(90deg, transparent, rgba(122,12,12,0.45), transparent); animation: sweep 7s cubic-bezier(.45,0,.2,1) infinite; }
-@keyframes sweep { 0% { transform: translateY(80px); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateY(1100px); opacity: 0; } }
 .photo-card { position: relative; aspect-ratio: 1 / 1.02; background: #fafaf9; border: 1px solid #1c1917; box-shadow: 0 40px 80px -45px rgba(28,25,23,0.55); transform-style: preserve-3d; }
 .photo-card img { display: block; }
 .photo-corner { position: absolute; width: 14px; height: 14px; border-color: var(--maroon); border-style: solid; z-index: 2; }
@@ -76,8 +74,6 @@
 .photo-corner.tr { top: -8px; right: -8px; border-width: 1.5px 1.5px 0 0; }
 .photo-corner.bl { bottom: -8px; left: -8px; border-width: 0 0 1.5px 1.5px; }
 .photo-corner.br { bottom: -8px; right: -8px; border-width: 0 1.5px 1.5px 0; }
-.photo-scan { position: absolute; left: 0; right: 0; top: 0; height: 30%; pointer-events: none; background: linear-gradient(180deg, transparent, rgba(122,12,12,0.07) 85%, rgba(122,12,12,0.25) 100%); animation: scan 5.5s ease-in-out infinite; }
-@keyframes scan { 0% { transform: translateY(-100%); opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { transform: translateY(340%); opacity: 0; } }
 .hero-badge { position: relative; width: 132px; height: 132px; border-radius: 50%; background: #1c1917; box-shadow: 0 20px 40px -18px rgba(28,25,23,0.6); }
 @media (min-width: 768px) { .hero-badge { width: 168px; height: 168px; } }
 .hero-badge-ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 22s linear infinite; }
@@ -151,6 +147,6 @@
 .back-top:hover { transform: translateY(-3px); background: rgba(255,255,255,0.12); }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track, .btn-arrow-down, .hero-badge-ring, .photo-scan, .hero-lines::after, .cursor-blink { animation: none; }
+  .marquee-track, .btn-arrow-down, .hero-badge-ring, .photo-scan, .cursor-blink { animation: none; }
   .frame:hover .frame-img { transform: none; }
 }

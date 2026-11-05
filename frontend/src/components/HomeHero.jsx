@@ -39,7 +39,6 @@ const Portrait = () => {
         <span className="photo-corner tl" /><span className="photo-corner tr" /><span className="photo-corner bl" /><span className="photo-corner br" />
         <span className="absolute inset-0 overflow-hidden">
           <img src="/images/opt/aryanbasnet.webp" alt="Portrait of Aryan Basnet" fetchpriority="high" className="h-full w-full object-cover" data-testid="hero-portrait" />
-          <span className="photo-scan" aria-hidden="true" />
         </span>
       </motion.div>
       <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1, ease: EASE, delay: 0.9 }} className="absolute -bottom-10 -left-4 sm:-left-10 lg:-left-14">
